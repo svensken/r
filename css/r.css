@@ -1,0 +1,48 @@
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0; font-family: 'Helvetica Neue',Helvetica, sans-serif;}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.half-circle-top {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  background: rgb(100,149,237);
+  background: rgba(100,149,237,.3);
+  box-shadow: 0 0 8px rgb(100,149,237) inset;
+  border: 3px solid rgb(100,149,237);
+  border-bottom: none;
+  border-radius: 150px 150px 0 0;
+  -moz-border-radius: 150px 150px 0 0;
+  -webkit-border-radius: 150px 150px 0 0;
+}
+.half-circle-top h1 {
+  float: right;
+  font-size: 33px;
+  text-shadow: white 0 1px 0;
+  /* TODO: make higher */
+  margin: 0 33px 20px 0;
+}
+.bubblan {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-size: 80px !important;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  box-shadow: 0 0 8px #808080;
+  -webkit-box-shadow: 0 0 8px #808080;
+  -moz-box-shadow: 0 0 8px #808080;
+}
+.half-circle-side {
+
+}
