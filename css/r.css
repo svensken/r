@@ -23,15 +23,16 @@ body, html { font-size: 100%; padding: 0; margin: 0; font-family: 'Helvetica Neu
   -moz-border-radius: 150px 150px 0 0;
   -webkit-border-radius: 150px 150px 0 0;
 }
-.half-circle-top h1 {
+.half-circle-top p {
   float: right;
-  font-size: 33px;
-  text-shadow: white 0 1px 0;
+  font-size: 47px;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: white 0 2px 0;
   /* TODO: make higher */
-  margin: 0 33px 20px 0;
+  margin: 65px 25px 0 0;
 }
 .bubblan {
-  display: block;
+  float: left;
   width: 80px;
   height: 80px;
   background-size: 80px !important;
