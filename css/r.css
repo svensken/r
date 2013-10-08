@@ -5,38 +5,67 @@ body, html { font-size: 100%; padding: 0; margin: 0; font-family: 'Helvetica Neu
 
 .container {
   margin: 0 auto;
+  padding: 20px;
   max-width: 960px;
 }
+.row {
+  clear: both;
+}
 
-.half-circle-top {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 300px;
-  height: 150px;
-  padding: 20px;
+.half-circle-top,
+.half-circle-left,
+.half-circle-right {
   background: rgb(100,149,237);
   background: rgba(100,149,237,.3);
   box-shadow: 0 0 8px rgb(100,149,237) inset;
   border: 3px solid rgb(100,149,237);
-  border-bottom: none;
+}
+
+.half-circle-top {
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
   border-radius: 150px 150px 0 0;
   -moz-border-radius: 150px 150px 0 0;
   -webkit-border-radius: 150px 150px 0 0;
+  border-bottom: none;
 }
 .half-circle-top p {
   float: right;
   font-size: 47px;
   font-family: "Courier New", Courier, monospace;
   text-shadow: white 0 2px 0;
-  /* TODO: make higher */
   margin: 65px 25px 0 0;
 }
-.bubblan {
+
+.half-circle-left {
   float: left;
+  width: 100px;
+  height: 200px;
+  border-radius: 100px 0 0 100px;
+  -moz-border-radius: 100px 0 0 100px;
+  -webkit-border-radius: 100px 0 0 100px;
+  border-right: none;
+}
+
+.half-circle-right {
+  float: right;
+  width: 100px;
+  height: 200px;
+  border-radius: 0 100px 100px 0;
+  -moz-border-radius: 0 100px 100px 0;
+  -webkit-border-radius: 0 100px 100px 0;
+  border-left: none;
+}
+
+.bubblan {
   width: 80px;
   height: 80px;
+  overflow: hidden;
   background-size: 80px !important;
   background-repeat: no-repeat;
+  /*border: 1px solid white;*/
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -44,6 +73,17 @@ body, html { font-size: 100%; padding: 0; margin: 0; font-family: 'Helvetica Neu
   -webkit-box-shadow: 0 0 8px #808080;
   -moz-box-shadow: 0 0 8px #808080;
 }
+.half-circle-top .bubblan,
+.half-circle-left .bubblan {
+  float: left;
+}
+.half-circle-right .bubblan {
+  float: right;
+}
 .half-circle-side {
 
 }
+
+
+
+
