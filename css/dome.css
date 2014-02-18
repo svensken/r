@@ -6,10 +6,76 @@ body, html { font-size: 100%; padding: 0; margin: 0; font-family: 'Helvetica Neu
 .container {
   margin: 0 auto;
   padding: 20px;
-  max-width: 960px;
+  width: 960px;
 }
-.row {
-  clear: both;
+
+.sidebar {
+  float: left;
+  width: 20%;
+  padding: 20px 0;
+  margin: 50px 0 20px 0;
+  border-right: 1px solid #ccc;
+}
+.sidebar ul {
+  text-align: center;
+  list-style: none;
+  font-size: 80%;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+.sidebar li {
+  margin-bottom: 10px;
+}
+.sidebar ul hr {
+  width: 25%;
+  color: #ccc;
+  background-color: #ccc;
+}
+
+.roundpic {
+  position: absolute;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.wrapright {
+  position: relative;
+  padding: 8px 25px;
+  margin: 14px -10px 20px 50px;     /* 30 = 20 padding + 10 neg margin */
+  
+  border: 2px solid #333;
+  border-radius: 2px;
+  -moz-box-shadow: inset 0 0 0 2px white;
+  -webkit-box-shadow: inset 0 0 0 2px white;
+  box-shadow: inset 0 0 0 2px white;
+  background: #333;
+  color: white;
+}
+.wrapright:before,
+.wrapright:after {
+  content: " ";
+  border-top: 8px solid #ccc;
+  position: absolute;
+  bottom: -10px;
+}
+.wrapright:after {
+  border-right: 8px solid transparent;
+  right: -1px;
+}
+
+.content {
+  float: right;
+  width: 70%;
+  margin: 40px 0;
 }
 
 .half-circle-top,

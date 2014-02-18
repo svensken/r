@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Asgeir Hoem">
+	<meta name="keywords" content="CSS, CSS3, wraparound, ribbon, ribbon effect, banner effect, banner">
+	<meta name="description" content="CSS3 wraparound ribbon effect with no additional markup. Works in most browsers.">
+	<link rel="shortcut icon" href="/img/favicon.jpg">
+	<link rel="stylesheet" href="../global.css">
+	<script src="../modernizr.js"></script> <!-- Oppretter støtte for HTML5-elementer i eldre nettlesere + feature detects -->
+	<title>CSS3 wrap-around ribbon with no additional markup</title>
+	
+	<style>
+		body { background:#fff url('bg.png'); }
+		#container {
+			margin: 0 auto;
+			padding: 20px;
+			width: 960px;
+		}
+		#page {
+			float: left;
+			width: 20%;
+			margin: 50px 0 20px 0;
+			border-right: 1px solid #ccc;
+  			background:#bccdff;
+			border-radius:5px;
+			}
+		#wraparound {
+			position: relative;
+  padding: 20px 30px;
+  margin: 0 -30px 0 10px;	/* 30 = 20 padding + 10 neg margin */
+			
+			bborder:1px solid #e7bd62;
+			background:#f6f1b5;
+			ccolor:#6a6340;
+			bbox-shadow:0 4px 4px rgba(0,0,0,0.3);
+			}
+			#wraparound:before,
+			#wraparound:after {
+				content:" ";
+				border-top:10px solid #715926;	/* Colour of the triangle. To flip the effect, use border-bottom. */
+				position:absolute;
+				bottom:-11px; /* +1 to compensate for the border */
+				} 
+				#wraparound:after {
+					border-right:10px solid transparent;
+					right:-1px;
+					}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="page">
+			<div id="wraparound">
+				<h3>hello</h3>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6154808-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
+</body>
+</html>
